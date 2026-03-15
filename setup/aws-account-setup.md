@@ -13,3 +13,11 @@ Root account compromise can lead to complete control of the AWS environment
 - AWS IAM
 - AWS Billing Alerts
 
+## Verification
+The following security measures were verified:
+- MFA successfully enabled for the AWS root account
+- Billing alert configured for $5 monthly spend
+- AWS console access tested
+
+Screenshots of these configurations will be added to the '/screenshots'  directory.
+
