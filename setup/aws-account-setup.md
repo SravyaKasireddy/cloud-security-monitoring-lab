@@ -3,7 +3,7 @@ Before building the cloud security monitoring lab, the AWS root account was secu
 
 ## Security Controls Implemented
 1. Enabled Multi-Factor Authentication (MFA) for the root account
-2. Configured AWS building alerts to prevent unexpected charges
+2. Configured AWS billing alerts to prevent unexpected charges
 3. Verified access to the AWS Management Console
 
 ## Why This Step Is Important
