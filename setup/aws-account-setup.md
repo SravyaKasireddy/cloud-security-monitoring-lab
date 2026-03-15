@@ -33,4 +33,5 @@ Log file validation: Enabled
 Purpose:
 CloudTrail provides a complete audit trail of actions performed in the AWS account. These logs will later be used for security monitoring and threat detection.
 
+Log file validation: Enabled to ensure log integrity and prevent tampering.
 
