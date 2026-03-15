@@ -21,3 +21,16 @@ The following security measures were verified:
 
 Screenshots of these configurations will be added to the '/screenshots'  directory.
 
+## CloudTrail Logging Setup
+AWS CloudTrail was enabled to record all API activity within the AWS environment.
+
+Configuration:
+Trail name: security-monitoring-trail
+Log storage: Amazon S3
+Management events: Read and write events enabled
+Log file validation: Enabled
+
+Purpose:
+CloudTrail provides a complete audit trail of actions performed in the AWS account. These logs will later be used for security monitoring and threat detection.
+
+
