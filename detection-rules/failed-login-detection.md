@@ -1,33 +1,18 @@
-## Failed AWS Console Login Detection
-This detection rule identifies failed login attempts to the AWS Management Console.
+## Failed Console Login Detection
 
-## Log Source
-AWS CloudTrail
+Log Source: AWS CloudTrail
 
-## Detection Method
-ClodWatch metric filter
-
-## Filter Pattern
+Filter Pattern:
 { ($.eventName = "ConsoleLogin") && ($.errorMessage = "Failed authentication") }
 
-## Alert Trigger
+Alert Trigger:
 Metric value >= 1 within 1 minute.
 
-## Notification
-Amazon SNS email notification.
-
-## Test Scenario
-Multiple incorrect password attempts were made using the IAM user 'employee-user'.
-
-## Result
-The CloudWatch alarm 'Failed-AWS-Console-Login' triggered successfully and an SNS email alert was received.
-
-## Security Impact
-This rule helps detect potential brute-force login attempts or unauthorized access attempts to AWS accounts.
-
-Metric namespace: SecurityMonitoring
-Metric name: FailedConsoleLogin
-Metric Value: 1
-
 Purpose:
-This metric filter detects failed AWS console login attempts from CloudTrail logs.
+Detect brute-force login attempts or unauthorized access attempts.
+
+Test Scenario:
+Multiple incorrect login attempts were performed using the employee-user IAM account.
+
+Result:
+CloudWatch alarm triggered, and an SNS email notification was received.
