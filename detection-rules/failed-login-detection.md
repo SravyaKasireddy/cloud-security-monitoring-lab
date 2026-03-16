@@ -1,7 +1,6 @@
 ## Metric Filter Configuration
 Filter name: FailedConsoleLoginFilter
-Filter pattern:
-{ ($.eventName = "ConsoleLogin") && ($.errorMessage = "Failed authentication") }
+Filter pattern: { ($.eventName = "ConsoleLogin") && ($.errorMessage = "Failed authentication") }
 
 Metric namespace: SecurityMonitoring
 Metric name: FailedConsoleLogin
